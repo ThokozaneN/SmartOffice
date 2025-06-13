@@ -55,6 +55,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
+            
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('active');
         }
     });
 });
+
+// Form submission
+const contactForm = document.querySelector('.contact-form form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will contact you shortly.');
+        this.reset();
+    });
+}
