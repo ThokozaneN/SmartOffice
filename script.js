@@ -71,3 +71,43 @@ if (contactForm) {
         this.reset();
     });
 }
+
+// Business Carousel Functionality
+let currentBusinessSlide = 0;
+const businessSlides = document.querySelectorAll('.business-slide');
+const totalBusinessSlides = businessSlides.length;
+
+function showBusinessSlide(index) {
+    businessSlides.forEach(slide => slide.classList.remove('active'));
+    businessSlides[index].classList.add('active');
+    currentBusinessSlide = index;
+}
+
+function nextBusinessSlide() {
+    currentBusinessSlide = (currentBusinessSlide + 1) % totalBusinessSlides;
+    showBusinessSlide(currentBusinessSlide);
+}
+
+function prevBusinessSlide() {
+    currentBusinessSlide = (currentBusinessSlide - 1 + totalBusinessSlides) % totalBusinessSlides;
+    showBusinessSlide(currentBusinessSlide);
+}
+
+// Auto-advance business slides
+let businessSlideInterval = setInterval(nextBusinessSlide, 3000);
+
+// Pause on hover
+const businessCarousel = document.querySelector('.business-carousel');
+if (businessCarousel) {
+    businessCarousel.addEventListener('mouseenter', () => {
+        clearInterval(businessSlideInterval);
+    });
+    
+    businessCarousel.addEventListener('mouseleave', () => {
+        businessSlideInterval = setInterval(nextBusinessSlide, 3000);
+    });
+}
+
+// Manual controls
+document.querySelector('.carousel-next')?.addEventListener('click', nextBusinessSlide);
+document.querySelector('.carousel-prev')?.addEventListener('click', prevBusinessSlide);
