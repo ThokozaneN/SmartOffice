@@ -2857,3 +2857,133 @@ section {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
+
+/* Registration Packages Section */
+.registration-packages {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.package-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.package-footer {
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    right: 50px;
+    padding: 0 2rem 2rem;
+    background: white;
+}
+
+.package-card .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.package-content {
+    padding-bottom: 70px; /* Space for fixed button */
+    flex-grow: 1;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+}
+
+.package-card.featured {
+    border: 2px solid var(--primary-color);
+}
+
+.package-badge {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 2rem;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 120px;
+    text-align: center;
+}
+
+.package-header {
+    padding: 2rem 2rem 1rem;
+    background: var(--dark-color);
+    color: white;
+    text-align: center;
+}
+
+.package-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.package-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.package-features {
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+}
+
+.package-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.package-features i {
+    color: var(--primary-color);
+    margin-right: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.package-card .btn {
+    display: block;
+    margin: 0 2rem 2rem;
+    text-align: center;
+}
+
+.package-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.package-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .package-card.featured {
+        order: -1; /* Moves featured package to top on mobile */
+    }
+}
