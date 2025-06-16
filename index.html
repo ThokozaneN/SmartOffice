@@ -3,247 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartOffice | Printing, Branding & Photography</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Smart Office | Trusted to Deliver Excellence</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">SMART<span>OFFICE</span></a>
+                <a href="#" class="logo">Smart<span>Office</span></a>
                 <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Office workspace">
-        </div>
-        <div class="hero-overlay"></div>
-        
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Your Complete <span class="highlight">Business</span> Solution
+                    <span class="title-line">We Create</span>
+                    <span class="title-line">Powerful</span>
+                    <span class="title-line">Brand Experiences</span>
                 </h1>
-                <p class="hero-subtitle">
-                    Professional printing, branding, photography, web development, business services and more!
-                </p>
+                <p class="hero-subtitle">Trusted to Deliver Excellence</p>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-secondary">Book Now</a>
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/600x600" alt="Branding work samples" class="main-image">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
                 </div>
             </div>
         </div>
-        
-        <div class="promo-slideshow">
-            <div class="promo-slide active">
-                <h3><i class="fas fa-camera"></i> Photography Special!</h3>
-                <p>20% off all portrait sessions on Youth Day (16 June) only.</p>
-            </div>
-            <div class="promo-slide">
-                <h3><i class="fas fa-print"></i> New Client Offer</h3>
-                <p>Free business card design with any branding package</p>
-            </div>
-            <div class="promo-slide">
-                <h3><i class="fas fa-building"></i> Company Registration</h3>
-                <p>Complete business registration from R1500</p>
-            </div>
-            
-            <div class="promo-controls">
-                <button class="promo-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="promo-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow"></div>
         </div>
     </section>
 
-    <!--Services Section-->
-    <section class="services" id="services">
+    <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p>Comprehensive business solutions to help your company grow</p>
-            
+            <div class="section-header">
+                <h2 class="section-title">Our <span>Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions for your business needs</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-print"></i>
                     </div>
-                    <h3>Professional Printing</h3>
-                    <p>Business cards, flyers, banners, and all your printing needs with premium quality finishes.</p>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <h3>Printing Services</h3>
+                    <p>High-quality business cards, brochures, banners, and all your printing needs.</p>
+                    <a href="#" class="btn btn-tertiary">Learn More</a>
                 </div>
-                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Create a powerful brand identity with our comprehensive branding solutions.</p>
+                    <a href="#" class="btn btn-tertiary">Learn More</a>
+                </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3>Branding & Design</h3>
-                    <p>Corporate identity, and visual branding to make your business stand out.</p>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <h3>Graphic Design</h3>
+                    <p>Stunning visuals that communicate your brand message effectively.</p>
+                    <a href="#" class="btn btn-tertiary">Learn More</a>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>Photography</h3>
-                    <p>Professional portrait, product and event photography services.</p>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites that drive engagement and conversions.</p>
+                    <a href="#" class="btn btn-tertiary">Learn More</a>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
-                    <h3>Company Services</h3>
-                    <p>Business registration, document preparation and corporate services.</p>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <h3>Company Registration</h3>
+                    <p>Expert assistance with business registration and legal documentation.</p>
+                    <a href="#" class="btn btn-tertiary">Learn More</a>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-pencil-ruler"></i>
+                        <i class="fas fa-chart-line"></i>
+                    <div class="pulse-effect"></div>
+                    <div class="pulse-effect delay-1"></div>
+                    <div class="pulse-effect delay-2"></div>
+                    <div class="pulse-effect delay-3"></div>
+                    <div class="pulse-effect delay-4"></div>
+                    <div class="pulse-effect delay-5"></div>
+                    <div class="pulse-effect delay-6"></div>
+                    <div class="pulse-effect delay-7"></div>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Graphic Design</h3>
-                    <p>Custom graphics for social media, advertisements, and marketing materials.</p>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <h3>Document Services</h3>
-                    <p>Professional typing, editing, formatting and copying of all business documents.</p>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
+                    <h3>Digital Marketing</h3>
+                    <p>Boost your online presence with our strategic digital marketing services.</p>
+                    <a href="#" class="btn btn-tertiary">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Carousel-->
-<section class="trusted-businesses">
-    <div class="container">
-        <h2>Businesses That Trust Us</h2>
-        <p>We're proud to work with these great businesses</p>
-        
-        <div class="business-carousel">
-            <div class="business-slide active">
-                <img src="assets/pick-n-pay-seeklogo.png" alt="Picknpay">
-            </div>
-            <div class="business-slide">
-                <img src="assets/clicks-seeklogo.png" alt="Clicks">
-            </div>
-            <div class="business-slide">
-                <img src="assets/shoprite-holdings-seeklogo.png" alt="Shoprite">
-            </div>
-            <div class="business-slide">
-                <img src="assets/capitec-bank-seeklogo.png" alt="Capitec">
-            </div>
-            <div class="business-slide">
-                <img src="assets/sasol-seeklogo.png" alt="Sasol">
-            </div>
-            <div class="business-slide">
-                <img src="assets/debonairs-pizza-seeklogo.png" alt="Debonairs">
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <section class="locations" id="locations">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Our Locations</h2>
-            <p>Visit us at our convenient locations</p>
-            
-            <div class="locations-grid">
-                <div class="location-card">
-                    <div class="location-image">
-                        <img src="images/002.jpg" alt="Embalenhle Mall">
+            <div class="section-header">
+                <h2 class="section-title">Our <span>Work</span></h2>
+                <p class="section-subtitle">See what we've created for our clients</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="print">Print</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="graphic">Graphic</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Branding Project">
                     </div>
-                    <div class="location-info">
-                        <h3>Mall@Emba</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> Shop 25, Mall@Emba, Embalenhle</p>
-                        <p><i class="fas fa-clock"></i> Mon-Fri: 8:30am - 5:30pm | Sat: 9am - 2pm</p>
-                        <p><i class="fas fa-phone"></i> 065 843 9276</p>
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Branding</h3>
+                        <p>Complete brand identity for a tech startup</p>
+                        <a href="#" class="btn btn-tertiary">View Project</a>
                     </div>
                 </div>
-                
-                <div class="location-card">
-                    <div class="location-image">
-                        <img src="images/secunda.jpg" alt="Secunda">
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Print Project">
                     </div>
-                    <div class="location-info">
-                        <h3>Secunda Mall</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> Center Management Office, Secunda Mall, Secunda</p>
-                        <p><i class="fas fa-clock"></i> Mon-Fri: 8am - 5pm | Sat: 9am - 1pm</p>
-                        <p><i class="fas fa-phone"></i> 065 843 9276</p>
+                    <div class="portfolio-overlay">
+                        <h3>Business Stationery</h3>
+                        <p>Premium printed materials for a law firm</p>
+                        <a href="#" class="btn btn-tertiary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Web Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Online store for a fashion retailer</p>
+                        <a href="#" class="btn btn-tertiary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="graphic">
+                    <div class="portfolio-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Graphic Design Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Marketing Collateral</h3>
+                        <p>Brochures and flyers for a real estate company</p>
+                        <a href="#" class="btn btn-tertiary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Branding Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant Branding</h3>
+                        <p>Full branding package for a new restaurant</p>
+                        <a href="#" class="btn btn-tertiary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Print Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Event Branding</h3>
+                        <p>Banners and signage for a corporate event</p>
+                        <a href="#" class="btn btn-tertiary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <p>Ready to start your project?</p>
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">About <span>Us</span></h2>
+                        <p class="section-subtitle">Your trusted partner for creative solutions</p>
+                    </div>
+                    <p>Smart Office is a full-service agency specializing in branding, design, and business services. We combine creativity with strategy to deliver impactful solutions that help businesses stand out and succeed.</p>
+                    <p>Founded in 2016, we've grown from a small design studio to a comprehensive creative agency serving clients across multiple industries. Our team of talented designers, developers, and business experts work together to provide seamless solutions for all your business needs.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3 data-count="250">0</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 data-count="500">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 data-count="12">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/500x600" alt="Our Team">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="testimonials">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch for quotes or to book our services</p>
-            
+            <div class="section-header">
+                <h2 class="section-title">Client <span>Testimonials</span></h2>
+                <p class="section-subtitle">What our clients say about us</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Creative Solutions transformed our brand identity completely. Their attention to detail and creative approach resulted in a brand that truly represents who we are. The website they developed has significantly increased our online engagement."</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/80x80" alt="Client">
+                            <div>
+                                <h4>George </h4>
+                                <span>CEO, TechStart Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The printing quality exceeded our expectations. From business cards to large format banners, everything was perfect. Their team was professional, met all deadlines, and provided excellent customer service throughout the process."</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/80x80" alt="Client">
+                            <div>
+                                <h4>Slindile Ndlovu</h4>
+                                <span>Marketing Director, UrbanEats</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"As a startup, we needed help with both company registration and branding. Creative Solutions handled everything seamlessly. Their business expertise combined with creative talent made them the perfect one-stop solution for our needs."</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/80x80" alt="Client">
+                            <div>
+                                <h4>Thokozane Nxumalo</h4>
+                                <span>Founder, GreenFuture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>info@smartoffice.co.za</p>
+                    <div class="section-header">
+                        <h2 class="section-title">Get In <span>Touch</span></h2>
+                        <p class="section-subtitle">Let's discuss your project</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>065 843 9276 (Embalenhle)<br>065 843 9276 (Secunda)</p>
+                    <p>Ready to take your brand to the next level? Contact us today to discuss how we can help with your printing, branding, design, or business needs.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Shop 49, Mall@Emba, Embalenhle, 2285 <br>
+                                Center Management, Secunda Mall, Seuncda</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <p>+27 65 843 9276</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p>info@smartoffice.co.za</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-text">
+                                <h4>Hours</h4>
+                                <p>Monday - Friday: 8:00am - 6:00pm</p>
+                                <p>Saturday: 8:45am - 5:00pm</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <p>Operating Hours:<br>Weekdays: 7:15am-6:00pm<br>Weekends: 8:45am-5:30pm</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
                     </div>
                 </div>
-                
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
                         </div>
                         <div class="form-group">
-                            <select class="form-control" required>
-                                <option value="">Select Service</option>
-                                <option>Printing</option>
-                                <option>Branding</option>
-                                <option>Photography</option>
-                                <option>Company Registration</option>
-                                <option>Graphic Design</option>
-                                <option>Document Services</option>
-                                <option>Other</option>
+                            <select id="service" name="service">
+                                <option value="">Select a Service</option>
+                                <option value="printing">Printing Services</option>
+                                <option value="branding">Branding</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="company-registration">Company Registration</option>
+                                <option value="other">Other</option>
                             </select>
+                            <label for="service">Service Needed</label>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -255,35 +410,53 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#" class="logo">SMART<span>OFFICE</span></a>
-                    <p>Your complete business solution for printing, branding and photography and more.</p>
+                <div class="footer-col">
+                    <h3>Smart Office</h3>
+                    <p>Your one-stop solution for all branding, design, printing, and business needs. We combine creativity with strategy to deliver exceptional results.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <a href="#">Printing Services</a>
-                        <a href="#">Branding & Design</a>
-                        <a href="#">Photography</a>
-                        <a href="#">Company Services</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <a href="#">About Us</a>
-                        <a href="#">Locations</a>
-                        <a href="#">Contact</a>
-                    </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Printing Services</a></li>
+                        <li><a href="#">Brand Identity</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Company Registration</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2025 SmartOffice. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <p>&copy; 2025 Smart Office. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
                 </div>
             </div>
         </div>
