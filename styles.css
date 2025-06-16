@@ -1032,7 +1032,7 @@ section {
 }
 
 /* Custom Cursor */
-.cursor,
+/*.cursor,
 .cursor-follower {
     position: fixed;
     border-radius: 50%;
@@ -1064,7 +1064,7 @@ section {
 
 .cursor-follower.active {
     transform: translate(-50%, -50%) scale(0.5);
-}
+}*/
 
 /* Animations */
 @keyframes slideUp {
@@ -1265,5 +1265,339 @@ section {
 
     .testimonial-content {
         padding: 2rem 1.5rem;
+    }
+}
+
+/*Printing CSS*/
+/* Printing Page Styles */
+.printing-hero {
+    position: relative;
+    padding-top: 100px;
+    background-color: var(--light-color);
+    overflow: hidden;
+}
+
+.printing-hero-content {
+    padding: 4rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+.printing-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.printing-title span {
+    display: block;
+}
+
+.printing-subtitle {
+    font-size: 1.5rem;
+    color: var(--gray-color);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.printing-hero-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.printing-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.printing-intro {
+    padding: 6rem 0;
+    background-color: var(--white);
+}
+
+.printing-intro-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.printing-intro-text {
+    flex: 1;
+}
+
+.printing-intro-image {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.printing-intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.printing-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.printing-stats .stat-item {
+    text-align: center;
+}
+
+.printing-stats h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.printing-stats p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.printing-services {
+    background-color: var(--light-color);
+    padding: 6rem 0;
+}
+
+.service-features {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.service-features li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.service-features li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.printing-process {
+    padding: 6rem 0;
+    background-color: var(--white);
+}
+
+.process-steps {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.process-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primary-color);
+    z-index: 2;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    z-index: 3;
+}
+
+.process-step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.printing-materials {
+    padding: 6rem 0;
+    background-color: var(--light-color);
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.material-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.material-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.material-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.material-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.material-card:hover .material-image img {
+    transform: scale(1.05);
+}
+
+.material-card h3 {
+    padding: 1.5rem 1.5rem 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.material-card ul {
+    padding: 0 1.5rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.material-card li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.material-card li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.printing-cta {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    text-align: center;
+}
+
+.printing-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.printing-cta p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .printing-title {
+        font-size: 3.5rem;
+    }
+    
+    .printing-intro-content {
+        flex-direction: column;
+    }
+    
+    .printing-intro-image {
+        order: -1;
+        margin-bottom: 3rem;
+    }
+    
+    .process-steps {
+        gap: 1.5rem;
+    }
+    
+    .process-step {
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .printing-title {
+        font-size: 2.8rem;
+    }
+    
+    .printing-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .printing-hero-image {
+        height: 350px;
+    }
+    
+    .printing-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .process-step {
+        min-width: 100%;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .printing-title {
+        font-size: 2.2rem;
+    }
+    
+    .printing-hero-image {
+        height: 250px;
     }
 }
